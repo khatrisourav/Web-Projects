@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking appointment </title>
+</head>
+<body>
+     
+   
+<div style=" background-color: antiquewhite; text-align: center;">
+    <h1> Booking appointment App</h1>
+    <label for="filter"> Filter</label>
+    <select id="filter" name="filter">
+        <option id="all" value="All">All</option>
+        <option id="bus1" value="Bus1">Bus1</option>
+        <option id="bus2"  value="Bus2">Bus2</option>
+        <option id="bus3" value="BUs3">Bus3</option>
+    </select>
+</div>
+   
+    <br>
+<div style="text-align: center;">
+
+
+    <form onsubmit="handleform(event)" >
+        <label for="name">Name:-</label>
+        <input type="text" id="name" name="name"><br> <br>
+        <label for="email">Email:-</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="number">Phone number:-</label>
+        <input type="text" id="number" name="number"><br><br>
+
+        <label for="choose">Choose Bus</label>
+
+        <select id="choose" name="choose">
+            <option id="buss1" value="bus1">bus1</option>
+            <option id="buss2" value="bus2">bus2</option>
+            <option  id="buss3" value="bus3">bus3</option>
+        </select><br><br>
+        <button id="book" type="submit">
+          Book
+        </button>
+    </form>
+
+    <ul id="list">
+
+    </ul>
+</div>
+<script src="booking.js"></script>
+</body>
+
+</html>
